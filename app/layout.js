@@ -1,16 +1,47 @@
+import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
 import SignInButton from "./SignInButton.jsx";
+import ThemeToggle from "./ThemeToggle.jsx";
+
+const sans = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const serif = Fraunces({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-serif",
+  display: "swap",
+});
 
 export const metadata = {
   title: "UPSC Compass",
   description: "Daily current affairs for UPSC aspirants, sorted by subject.",
 };
 
+const THEME_INIT_SCRIPT = `
+(function () {
+  try {
+    var stored = localStorage.getItem("upsc-compass-theme");
+    if (stored === "dark" || stored === "light") {
+      document.documentElement.setAttribute("data-theme", stored);
+    }
+  } catch (e) {}
+})();
+`;
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning className={`${sans.variable} ${serif.variable}`}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       <body>
         <header className="site-header">
+          <input type="checkbox" id="nav-toggle" className="nav-toggle-checkbox" />
           <a className="brand" href="/">
             <span className="brand-icon">📘</span>
             <span>
@@ -29,10 +60,14 @@ export default function RootLayout({ children }) {
             <a href="/about">About</a>
           </nav>
           <div className="header-actions">
-            <a href="/saved" title="Saved articles" style={{ fontSize: "1.1rem", textDecoration: "none" }}>
+            <a className="icon-link" href="/saved" title="Saved articles">
               🔖
             </a>
+            <ThemeToggle />
             <SignInButton />
+            <label htmlFor="nav-toggle" className="nav-toggle-label" aria-label="Toggle menu">
+              ☰
+            </label>
           </div>
         </header>
         <main>{children}</main>

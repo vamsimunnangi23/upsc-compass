@@ -4,8 +4,10 @@ import { useState } from "react";
 import { categorySlug } from "../lib/subjects.js";
 import { baseSource } from "../lib/format.js";
 
-export default function ArticleCard({ article, isSaved, onToggleSave }) {
+export default function ArticleCard({ article, isSaved, onToggleSave, note, onNoteChange }) {
   const [copied, setCopied] = useState(false);
+  const [noteOpen, setNoteOpen] = useState(Boolean(note));
+  const [draft, setDraft] = useState(note || "");
 
   async function handleShare() {
     if (navigator.share) {
@@ -23,6 +25,14 @@ export default function ArticleCard({ article, isSaved, onToggleSave }) {
     } catch {
       // ignore unavailable clipboard
     }
+  }
+
+  function handleNoteBlur() {
+    if (draft === (note || "")) return;
+    onNoteChange(article.link, draft);
+    // A note is only useful if you can find the article again later, so
+    // saving one also bookmarks the article (unless already saved/unsaved).
+    if (draft.trim() !== "" && !isSaved) onToggleSave(article.link);
   }
 
   return (
@@ -62,7 +72,20 @@ export default function ArticleCard({ article, isSaved, onToggleSave }) {
             {isSaved ? "🔖 Saved" : "🔖 Save"}
           </button>
           <button onClick={handleShare}>{copied ? "✅ Copied!" : "📤 Share"}</button>
+          <button className={note ? "saved" : ""} onClick={() => setNoteOpen((v) => !v)}>
+            {note ? "🗒️ Note" : "🗒️ Add note"}
+          </button>
         </div>
+        {noteOpen && (
+          <textarea
+            className="note-box"
+            placeholder="Jot a quick note for revision -- link this to a GS topic, an example, a counterpoint..."
+            value={draft}
+            onChange={(e) => setDraft(e.target.value)}
+            onBlur={handleNoteBlur}
+            rows={3}
+          />
+        )}
       </div>
     </article>
   );

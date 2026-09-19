@@ -2,10 +2,12 @@
 
 import { useMemo } from "react";
 import { useBookmarks } from "../useBookmarks.js";
+import { useNotes } from "../useNotes.js";
 import ArticleCard from "../ArticleCard.jsx";
 
 export default function SavedClient({ articles }) {
   const { bookmarks, toggleBookmark } = useBookmarks();
+  const { notes, setNote } = useNotes();
 
   const saved = useMemo(
     () => articles.filter((a) => bookmarks.has(a.link)),
@@ -33,6 +35,8 @@ export default function SavedClient({ articles }) {
               article={article}
               isSaved={bookmarks.has(article.link)}
               onToggleSave={toggleBookmark}
+              note={notes[article.link]}
+              onNoteChange={setNote}
             />
           ))}
         </div>

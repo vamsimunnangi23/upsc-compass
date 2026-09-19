@@ -13,6 +13,7 @@ import { baseSource, digestColor } from "../lib/format.js";
 import { quoteOfTheDay, tipOfTheDay } from "../lib/quotes.js";
 import { questionOfTheDay } from "../lib/prelimsQuestions.js";
 import { useBookmarks } from "./useBookmarks.js";
+import { useNotes } from "./useNotes.js";
 import ArticleCard from "./ArticleCard.jsx";
 
 const POPULAR_SEARCHES = ["Budget", "India-US relations", "Climate change", "ISRO", "Supreme Court"];
@@ -52,7 +53,9 @@ export default function HomeClient({ articles }) {
   const [customFrom, setCustomFrom] = useState("");
   const [customTo, setCustomTo] = useState("");
   const [refreshing, setRefreshing] = useState(false);
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const { bookmarks, toggleBookmark } = useBookmarks();
+  const { notes, setNote } = useNotes();
 
   async function handleRefresh() {
     setRefreshing(true);
@@ -202,7 +205,16 @@ export default function HomeClient({ articles }) {
               Reset
             </span>
           </h2>
+          <button
+            type="button"
+            className="filters-toggle"
+            onClick={() => setFiltersOpen((v) => !v)}
+            aria-expanded={filtersOpen}
+          >
+            {filtersOpen ? "Hide filters ▲" : "Show filters ▼"}
+          </button>
 
+          <div className={`filter-body ${filtersOpen ? "open" : ""}`}>
           <div className="filter-group">
             <h3>GS Paper</h3>
             {GS_PAPERS.map((paper) => (
@@ -276,6 +288,7 @@ export default function HomeClient({ articles }) {
           <div className="tip-box">
             💡 <span>{tip}</span>
           </div>
+          </div>
         </aside>
 
         <section id="feed">
@@ -306,6 +319,8 @@ export default function HomeClient({ articles }) {
                   article={article}
                   isSaved={bookmarks.has(article.link)}
                   onToggleSave={toggleBookmark}
+                  note={notes[article.link]}
+                  onNoteChange={setNote}
                 />
               ))}
             </div>

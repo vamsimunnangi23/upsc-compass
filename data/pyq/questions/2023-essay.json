@@ -1,0 +1,90 @@
+[
+  {
+    "id": "2023-essay-1",
+    "year": 2023,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 1,
+    "question": "Thinking is like a game, it does not begin unless there is an opposite team.",
+    "subject": "Essay",
+    "section": "A",
+    "transcribed": true
+  },
+  {
+    "id": "2023-essay-2",
+    "year": 2023,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 2,
+    "question": "Visionary decision-making happens at the intersection of intuition and logic.",
+    "subject": "Essay",
+    "section": "A",
+    "transcribed": true
+  },
+  {
+    "id": "2023-essay-3",
+    "year": 2023,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 3,
+    "question": "Not all who wander are lost.",
+    "subject": "Essay",
+    "section": "A",
+    "transcribed": true
+  },
+  {
+    "id": "2023-essay-4",
+    "year": 2023,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 4,
+    "question": "Inspiration for creativity springs from the effort to look for the magical in the mundane.",
+    "subject": "Essay",
+    "section": "A",
+    "transcribed": true
+  },
+  {
+    "id": "2023-essay-5",
+    "year": 2023,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 5,
+    "question": "Girls are weighed down by restrictions, boys with demands — two equally harmful disciplines.",
+    "subject": "Essay",
+    "section": "B",
+    "transcribed": true
+  },
+  {
+    "id": "2023-essay-6",
+    "year": 2023,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 6,
+    "question": "Mathematics is the music of reason.",
+    "subject": "Essay",
+    "section": "B",
+    "transcribed": true
+  },
+  {
+    "id": "2023-essay-7",
+    "year": 2023,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 7,
+    "question": "A society that has more justice is a society that needs less charity.",
+    "subject": "Essay",
+    "section": "B",
+    "transcribed": true
+  },
+  {
+    "id": "2023-essay-8",
+    "year": 2023,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 8,
+    "question": "Education is what remains after one has forgotten what one has learned in school.",
+    "subject": "Essay",
+    "section": "B",
+    "transcribed": true
+  }
+]

@@ -55,7 +55,9 @@ export default function RootLayout({ children }) {
             <a href="/#feed">Current Affairs</a>
             <a href="/#gs-tabs">Topics</a>
             <a href="/#digest">Daily Digest</a>
+            <a href="/weekly">Weekly</a>
             <a href="/prelims">Prelims</a>
+            <a href="/pyq">PYQs</a>
             <a href="/toppers">Mains</a>
             <a href="/about">About</a>
           </nav>

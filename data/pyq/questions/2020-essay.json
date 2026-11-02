@@ -1,0 +1,10 @@
+[
+  {"id":"2020-essay-1","year":2020,"paper":"essay","exam":"mains","number":1,"question":"Life is long journey between human being and being humane","subject":"Essay","section":"A","transcribed":true},
+  {"id":"2020-essay-2","year":2020,"paper":"essay","exam":"mains","number":2,"question":"Mindful manifesto is the catalyst to a tranquil self","subject":"Essay","section":"A","transcribed":true},
+  {"id":"2020-essay-3","year":2020,"paper":"essay","exam":"mains","number":3,"question":"Ships do not sink because of water around them, ships sink because of water that gets into them","subject":"Essay","section":"A","transcribed":true},
+  {"id":"2020-essay-4","year":2020,"paper":"essay","exam":"mains","number":4,"question":"Simplicity is the ultimate sophistication","subject":"Essay","section":"A","transcribed":true},
+  {"id":"2020-essay-5","year":2020,"paper":"essay","exam":"mains","number":5,"question":"Culture is what we are, civilization is what we have","subject":"Essay","section":"B","transcribed":true},
+  {"id":"2020-essay-6","year":2020,"paper":"essay","exam":"mains","number":6,"question":"There can be no social justice without economic prosperity but economic prosperity without social justice is meaningless","subject":"Essay","section":"B","transcribed":true},
+  {"id":"2020-essay-7","year":2020,"paper":"essay","exam":"mains","number":7,"question":"Patriarchy is the least noticed yet the most significant structure of social inequality","subject":"Essay","section":"B","transcribed":true},
+  {"id":"2020-essay-8","year":2020,"paper":"essay","exam":"mains","number":8,"question":"Technology as the silent factor in international relations","subject":"Essay","section":"B","transcribed":true}
+]

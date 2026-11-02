@@ -1,0 +1,10 @@
+[
+  {"id":"2015-essay-1","year":2015,"paper":"essay","exam":"mains","number":1,"question":"Lending hands to someone is better than giving a dole.","subject":"Essay","transcribed":true,"section":"A"},
+  {"id":"2015-essay-2","year":2015,"paper":"essay","exam":"mains","number":2,"question":"Quick but steady wins the race.","subject":"Essay","transcribed":true,"section":"A"},
+  {"id":"2015-essay-3","year":2015,"paper":"essay","exam":"mains","number":3,"question":"Character of an institution is reflected in its leader.","subject":"Essay","transcribed":true,"section":"A"},
+  {"id":"2015-essay-4","year":2015,"paper":"essay","exam":"mains","number":4,"question":"Education without values, as useful as it is, seems rather to make a man more clever devil.","subject":"Essay","transcribed":true,"section":"A"},
+  {"id":"2015-essay-5","year":2015,"paper":"essay","exam":"mains","number":5,"question":"Technology cannot replace manpower.","subject":"Essay","transcribed":true,"section":"B"},
+  {"id":"2015-essay-6","year":2015,"paper":"essay","exam":"mains","number":6,"question":"Crisis faced in India – moral or economic.","subject":"Essay","transcribed":true,"section":"B"},
+  {"id":"2015-essay-7","year":2015,"paper":"essay","exam":"mains","number":7,"question":"Dreams which should not let India sleep.","subject":"Essay","transcribed":true,"section":"B"},
+  {"id":"2015-essay-8","year":2015,"paper":"essay","exam":"mains","number":8,"question":"Can capitalism bring inclusive growth ?","subject":"Essay","transcribed":true,"section":"B"}
+]

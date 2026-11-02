@@ -2,3 +2,6 @@ node_modules/
 .next/
 *.log
 .env*
+
+# Official PDFs downloaded for scripts/import-pyq.mjs
+data/pyq/pdfs/

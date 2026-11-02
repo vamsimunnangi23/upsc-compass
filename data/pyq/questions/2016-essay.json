@@ -1,0 +1,90 @@
+[
+  {
+    "id": "2016-essay-1",
+    "year": 2016,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 1,
+    "question": "If development is not engendered, it is endangered",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "A"
+  },
+  {
+    "id": "2016-essay-2",
+    "year": 2016,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 2,
+    "question": "Need brings greed, if greed increases it spoils breed",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "A"
+  },
+  {
+    "id": "2016-essay-3",
+    "year": 2016,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 3,
+    "question": "Water disputes between States in federal India",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "A"
+  },
+  {
+    "id": "2016-essay-4",
+    "year": 2016,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 4,
+    "question": "Innovation is the key determinant of economic growth and social welfare",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "A"
+  },
+  {
+    "id": "2016-essay-5",
+    "year": 2016,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 5,
+    "question": "Cooperative federalism : Myth or reality",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "B"
+  },
+  {
+    "id": "2016-essay-6",
+    "year": 2016,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 6,
+    "question": "Cyberspace and Internet : Blessing or curse to the human civilization in the long run",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "B"
+  },
+  {
+    "id": "2016-essay-7",
+    "year": 2016,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 7,
+    "question": "Near jobless growth in India : An anomaly or an outcome of economic reforms",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "B"
+  },
+  {
+    "id": "2016-essay-8",
+    "year": 2016,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 8,
+    "question": "Digital economy : A leveller or a source of economic inequality",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "B"
+  }
+]

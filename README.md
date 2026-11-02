@@ -1,7 +1,7 @@
 # UPSC Compass
 
 A simple current-affairs site for UPSC aspirants. It pulls headlines from
-public RSS feeds (The Hindu, Indian Express, LiveMint, Business Standard),
+public RSS feeds (The Hindu, Indian Express, LiveMint, Business Standard, PIB),
 tags each one with a likely GS paper and subject using keyword matching, and
 lists them with search/filter tools. It also links out to
 [topperscopy.hashin.me](https://topperscopy.hashin.me/) for Mains topper
@@ -29,6 +29,30 @@ Open http://localhost:3000. The first load fetches all RSS sources (a couple
 of seconds); after that, each source is cached for 30 minutes
 (`REVALIDATE_SECONDS` in `lib/articles.js`) so repeat visits are instant.
 Clicking "Refresh news" busts that cache immediately via `/api/refresh`.
+
+## Previous year questions (PYQs)
+
+`/pyq` has a year × paper grid of the official UPSC CSE question papers and
+answer keys (2011–2025, links in `data/pyq/papers.json`), plus filterable
+Prelims and Mains question banks at `/pyq/prelims` and `/pyq/mains`. The
+banks read `data/pyq/questions/{year}-{paper}.json` at build time, so they
+stay static and need no server storage.
+
+To add questions from an official paper:
+
+1. Download the PDF from upsc.gov.in in your browser (the site blocks
+   scripted downloads) and save it as e.g. `data/pyq/pdfs/2024-gs1.pdf`.
+   For Prelims, also save the answer key as `2024-prelims_key_gs1.pdf` /
+   `2024-prelims_key_csat.pdf`. File names are listed at the top of
+   `scripts/import-pyq.mjs`.
+2. Run `npm run import-pyq`. Existing files are skipped unless you pass
+   `--force`.
+3. Proofread the generated JSON against the PDF. Parsing is heuristic, so
+   every question starts as `"reviewed": false` and shows an "unverified"
+   badge until you set it to `true`.
+
+Missing links in the grid fall back to UPSC's previous question papers page;
+fill them in `papers.json` as you find them.
 
 ## Deploying for free
 

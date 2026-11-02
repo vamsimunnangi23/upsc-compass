@@ -1,0 +1,10 @@
+[
+  {"id":"2021-essay-1","year":2021,"paper":"essay","exam":"mains","number":1,"question":"The process of self-discovery has now been technologically outsourced.","subject":"Essay","section":"A","transcribed":true},
+  {"id":"2021-essay-2","year":2021,"paper":"essay","exam":"mains","number":2,"question":"Your perception of me is a reflection of you; my reaction to you is an awareness of me.","subject":"Essay","section":"A","transcribed":true},
+  {"id":"2021-essay-3","year":2021,"paper":"essay","exam":"mains","number":3,"question":"Philosophy of wantlessness is Utopian, while materialism is a chimera.","subject":"Essay","section":"A","transcribed":true},
+  {"id":"2021-essay-4","year":2021,"paper":"essay","exam":"mains","number":4,"question":"The real is rational and the rational is real.","subject":"Essay","section":"A","transcribed":true},
+  {"id":"2021-essay-5","year":2021,"paper":"essay","exam":"mains","number":5,"question":"Hand that rocks the cradle rules the world.","subject":"Essay","section":"B","transcribed":true},
+  {"id":"2021-essay-6","year":2021,"paper":"essay","exam":"mains","number":6,"question":"What is research, but a blind date with knowledge !","subject":"Essay","section":"B","transcribed":true},
+  {"id":"2021-essay-7","year":2021,"paper":"essay","exam":"mains","number":7,"question":"History repeats itself, first as a tragedy, second as a farce.","subject":"Essay","section":"B","transcribed":true},
+  {"id":"2021-essay-8","year":2021,"paper":"essay","exam":"mains","number":8,"question":"There are better practices to \"best practices\".","subject":"Essay","section":"B","transcribed":true}
+]

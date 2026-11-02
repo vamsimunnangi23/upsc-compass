@@ -1,0 +1,90 @@
+[
+  {
+    "id": "2017-essay-1",
+    "year": 2017,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 1,
+    "question": "Farming has lost the ability to be a source of subsistence for majority of farmers in India.",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "A"
+  },
+  {
+    "id": "2017-essay-2",
+    "year": 2017,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 2,
+    "question": "Impact of the new economic measures on fiscal ties between the union and states in India.",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "A"
+  },
+  {
+    "id": "2017-essay-3",
+    "year": 2017,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 3,
+    "question": "Destiny of a nation is shaped in its classrooms.",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "A"
+  },
+  {
+    "id": "2017-essay-4",
+    "year": 2017,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 4,
+    "question": "Has the Non-Alignment Movement (NAM) lost its relevance in a multipolar world ?",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "A"
+  },
+  {
+    "id": "2017-essay-5",
+    "year": 2017,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 5,
+    "question": "Joy is the simplest form of gratitude.",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "B"
+  },
+  {
+    "id": "2017-essay-6",
+    "year": 2017,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 6,
+    "question": "Fulfilment of 'new woman' in India is a myth.",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "B"
+  },
+  {
+    "id": "2017-essay-7",
+    "year": 2017,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 7,
+    "question": "We may brave human laws but cannot resist natural laws.",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "B"
+  },
+  {
+    "id": "2017-essay-8",
+    "year": 2017,
+    "paper": "essay",
+    "exam": "mains",
+    "number": 8,
+    "question": "'Social media' is inherently a selfish medium.",
+    "subject": "Essay",
+    "transcribed": true,
+    "section": "B"
+  }
+]

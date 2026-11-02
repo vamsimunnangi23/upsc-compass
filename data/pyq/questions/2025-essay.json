@@ -1,0 +1,10 @@
+[
+  {"id":"2025-essay-1","year":2025,"paper":"essay","exam":"mains","number":1,"question":"Truth knows no color.","subject":"Essay","section":"A","transcribed":true},
+  {"id":"2025-essay-2","year":2025,"paper":"essay","exam":"mains","number":2,"question":"The supreme art of war is to subdue the enemy without fighting.","subject":"Essay","section":"A","transcribed":true},
+  {"id":"2025-essay-3","year":2025,"paper":"essay","exam":"mains","number":3,"question":"Thought finds a world and creates one also.","subject":"Essay","section":"A","transcribed":true},
+  {"id":"2025-essay-4","year":2025,"paper":"essay","exam":"mains","number":4,"question":"Best lessons are learnt through bitter experiences.","subject":"Essay","section":"A","transcribed":true},
+  {"id":"2025-essay-5","year":2025,"paper":"essay","exam":"mains","number":5,"question":"Muddy water is best cleared by leaving it alone.","subject":"Essay","section":"B","transcribed":true},
+  {"id":"2025-essay-6","year":2025,"paper":"essay","exam":"mains","number":6,"question":"The years teach much which the days never know.","subject":"Essay","section":"B","transcribed":true},
+  {"id":"2025-essay-7","year":2025,"paper":"essay","exam":"mains","number":7,"question":"It is best to see life as a journey, not as a destination.","subject":"Essay","section":"B","transcribed":true},
+  {"id":"2025-essay-8","year":2025,"paper":"essay","exam":"mains","number":8,"question":"Contentment is natural wealth; luxury is artificial poverty.","subject":"Essay","section":"B","transcribed":true}
+]

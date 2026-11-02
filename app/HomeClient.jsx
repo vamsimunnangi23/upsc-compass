@@ -10,6 +10,7 @@ import {
   categorySlug,
 } from "../lib/subjects.js";
 import { baseSource, digestColor } from "../lib/format.js";
+import { isWithinDays, isSameDay } from "../lib/dates.js";
 import { quoteOfTheDay, tipOfTheDay } from "../lib/quotes.js";
 import { questionOfTheDay } from "../lib/prelimsQuestions.js";
 import { useBookmarks } from "./useBookmarks.js";
@@ -23,24 +24,6 @@ function toggleInSet(set, value) {
   if (next.has(value)) next.delete(value);
   else next.add(value);
   return next;
-}
-
-function isWithinDays(publishedAt, days) {
-  const published = new Date(publishedAt);
-  const now = new Date();
-  const cutoff = new Date(now);
-  cutoff.setDate(now.getDate() - days + 1);
-  cutoff.setHours(0, 0, 0, 0);
-  return published >= cutoff;
-}
-
-function isSameDay(publishedAt, date) {
-  const published = new Date(publishedAt);
-  return (
-    published.getFullYear() === date.getFullYear() &&
-    published.getMonth() === date.getMonth() &&
-    published.getDate() === date.getDate()
-  );
 }
 
 export default function HomeClient({ articles }) {

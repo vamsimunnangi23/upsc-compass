@@ -1023,3 +1023,287 @@ a {
     height: 160px;
   }
 }
+
+/* ---------- Weekly compilation ---------- */
+
+.weekly-page {
+  max-width: 820px;
+}
+
+.weekly-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.weekly-note {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0.3rem 0 0;
+}
+
+.print-btn {
+  background: var(--navy);
+  color: white;
+  border: none;
+  padding: 0.55rem 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.88rem;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+}
+
+.print-btn:hover {
+  opacity: 0.88;
+}
+
+.weekly-section {
+  margin-top: 2rem;
+}
+
+.weekly-section h2 {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.5rem;
+  margin: 0;
+}
+
+.weekly-section-sub {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: var(--font-sans), sans-serif;
+  color: var(--muted);
+  margin-left: 0.4rem;
+}
+
+.weekly-list {
+  list-style: decimal;
+  padding-left: 1.4rem;
+  margin: 0.9rem 0 0;
+}
+
+.weekly-list li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.weekly-list li a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.weekly-list li a:hover {
+  color: var(--accent);
+}
+
+.weekly-meta {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+@media print {
+  .site-header,
+  .site-footer,
+  .print-btn {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .weekly-page {
+    max-width: none;
+    padding: 0;
+  }
+
+  .pill {
+    background: white !important;
+    color: black !important;
+    border: 1px solid #999;
+  }
+
+  .weekly-list li a {
+    color: black;
+  }
+}
+
+/* ---------- Previous year questions ---------- */
+
+.pyq-page {
+  max-width: 900px;
+}
+
+.pyq-crumb {
+  margin: 0 0 0.25rem;
+  font-size: 0.85rem;
+}
+
+.pyq-crumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.pyq-exam-card h2 a {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.pyq-count {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.content-page p.pyq-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0.25rem 0 0.9rem;
+}
+
+.pyq-year-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.pyq-year-chips .chip {
+  text-decoration: none;
+}
+
+.pyq-year-chips .chip span {
+  color: var(--muted);
+  font-size: 0.75rem;
+  margin-left: 0.2rem;
+}
+
+.pyq-filters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, 1.6fr);
+  gap: 0.5rem;
+  margin: 1rem 0 0.25rem;
+}
+
+.pyq-filters select,
+.pyq-filters input {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card-bg);
+  color: var(--text);
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .pyq-filters {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pyq-filters input {
+    grid-column: 1 / -1;
+  }
+}
+
+.pyq-question .pill-row {
+  margin-bottom: 0.6rem;
+}
+
+.pyq-text p,
+.pyq-passage p {
+  white-space: pre-line;
+  line-height: 1.55;
+  margin: 0 0 0.5rem;
+}
+
+.content-page .pyq-text p {
+  font-size: 0.9rem;
+}
+
+.pyq-qtable-wrap {
+  overflow-x: auto;
+  margin: 0.25rem 0 0.6rem;
+}
+
+.pyq-qtable {
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  font-weight: 400;
+}
+
+.pyq-qtable th,
+.pyq-qtable td {
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.pyq-qtable th {
+  background: var(--explain-bg);
+  font-weight: 600;
+}
+
+.pyq-figure-note {
+  font-size: 0.82rem;
+  color: var(--muted);
+  background: var(--tip-bg);
+  border: 1px solid var(--tip-border);
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  margin: 0 0 0.6rem;
+}
+
+.pyq-figure-note a {
+  color: var(--accent);
+}
+
+.pill.pyq-unreviewed {
+  background: var(--tip-bg);
+  color: var(--muted);
+  border: 1px dashed var(--tip-border);
+}
+
+.pyq-passage {
+  font-size: 0.84rem;
+  background: var(--explain-bg);
+  border-radius: 6px;
+  padding: 0.5rem 0.7rem;
+  margin-bottom: 0.6rem;
+}
+
+.pyq-passage summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.pyq-passage > div {
+  margin-top: 0.5rem;
+}
+
+.pyq-link-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--accent);
+  font: inherit;
+  font-size: 0.84rem;
+  cursor: pointer;
+}
+
+.pyq-link-btn:hover {
+  text-decoration: underline;
+}
